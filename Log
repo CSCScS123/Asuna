@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class OnTriggerLoadLevelV2 : MonoBehaviour
+{
+
+    public GameObject player;
+
+    void Start()
+    {
+      
+    }
+
+	public void OnTriggerEnter(Collider plyr)
+	{
+	SceneManager.LoadScene("Market" //NamaScane);
+	}
+    public void OnTriggerStay(Collider plyr)
+ 	{ 
+	player.transform.Translate(X,Y,Z //LokasiObject);
+    }
+ 
+}
